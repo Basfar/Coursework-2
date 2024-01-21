@@ -24,7 +24,7 @@ const getDb = () => {
     if (!connection) {
       throw new Error("Call connectToDb() before calling getDb()");
     }
-    return connection.db('coursework');
+    return connection.db('Coursework2');
   };
 
   module.exports = { connectToDb, getDb }

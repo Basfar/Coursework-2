@@ -74,6 +74,7 @@ app.post("/orders", async (req, res, next) => {
 
     const db = getDb();
     const collection = db.collection("order");
+    console.log("taking timeeee", db)
 
     collection.insertOne(order, (err, result) => {
       if (err) throw err;
